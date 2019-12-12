@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , height="device-height" , initial-scale=1.0>
+    <title>Le Nombre Mystère-Facile</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style_facile.css">
+    <link rel="shortcut icon" type="image/ico" href="img/icone.ico">
+    <script src="JS/script_facile.js"></script>
+</head>
+
+<body>
+    <audio id="intro"   src="audio/intro.mp3"      type="audio/mp3"></audio>
+    <audio id="rejouer" src="audio/rejouer.mp3"    type="audio/mp3"></audio>
+    <audio id="error"   src="audio/error.mp3"      type="audio/mp3"></audio>
+    <audio id="correct" src="audio/correct.mp3"    type="audio/mp3"></audio>
+    <audio id="suivant" src="audio/suivant.mp3"    type="audio/mp3"></audio>
+    <audio id="perdu"   src="audio/perdu.mp3"      type="audio/mp3"></audio>
+    <audio id="victoire"src="audio/victoire.mp3"   type="audio/mp3"></audio>
+    
+    <div id="page">
+        <header>
+            <div id="home">
+                <button id="btHome">HOME</button>
+            </div>
+            <div id="titre">
+                <h1>Le Nombre Mystérieux</h1>
+                <h2>Version 3.6</h2>
+                <img id="imgMute" src="img/v_on.png">
+            </div>
+            <div id="logo"><img src="img/logo.png"></div>
+        </header>
+        <section>
+            <div id="partie1">
+                <div id="bienvenue">
+                    <p>Bienvenue dans le jeu du <b>Nombre Mystérieux!</b><br />Le principe est de trouver le nombre auquel je pense.<br /><br /><i>Mais avant tout, comment t'appelles-tu?</i></p>
+                    <input id="input1" type="text" placeholder="Ex : Dark Vador" size="25" maxlength="20" autofocus required autocomplete="off" />
+                    <button id="bouton1">C'est parti!</button>
+                </div>
+                <div id="vie_coeur">
+                    <table>
+                        <tr id="ligneCoeur"></tr>
+                        <tr id="ligneNombre"></tr>
+                    </table>
+                </div>
+            </div>
+            <div id="partie2" class="normal">
+                <div id="affichageNiveau">
+                    <p></p>
+                </div>
+                <div id="affichageJeu">
+                    <div id="affichageNombre">
+                        <input id="input2" type="number" placeholder=?? maxlength="3" min=0 autocomplete="off" />
+                        <button id="bouton2">OK!</button>
+                    </div>
+                    <div id="plusMoins">
+                        <img src="img/logo.png" alt="plus moins">
+                    </div>
+                </div>
+            </div>
+            <div id="divClavier">
+                <table id="clavier">
+                    <tr>
+                        <td><button id="bt0">0</button></td>
+                        <td><button id="bt1">1</button></td>
+                        <td><button id="bt2">2</button></td>
+                        <td><button id="bt3">3</button></td>
+                        <td><button id="bt4">4</button></td>
+                        <td><button id="btDel">EFF</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="bt5">5</button></td>
+                        <td><button id="bt6">6</button></td>
+                        <td><button id="bt7">7</button></td>
+                        <td><button id="bt8">8</button></td>
+                        <td><button id="bt9">9</button></td>
+                        <td><button id="btOk">OK!</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="score">
+                <p></p>
+                <button id="bouton3">Rejouer!</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Le Nombre Mystère[VS I.A]</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style_VS_IA.css">
+    <link rel="shortcut icon" type="image/ico" href="img/icone.ico">
+    <script src="JS/script_VS_IA.js"></script>
+</head>
+
+<body>
+
+    <audio id="intro"   src="audio/intro.mp3"></audio>
+    <audio id="rejouer" src="audio/rejouer.mp3"></audio>
+    <audio id="error"   src="audio/error.mp3"></audio>
+    <audio id="correct" src="audio/correct.mp3"></audio>
+    <audio id="suivant" src="audio/suivant.mp3"></audio>
+    <audio id="perdu"   src="audio/perdu.mp3"></audio>
+    <audio id="victoire"  src="audio/victoire.mp3"></audio>
+    <audio id="playerOne" src="audio/playerOne.m4a"></audio>
+    <audio id="playerTwo" src="audio/playerTwo.m4a"></audio>
+
+    <div id="page">
+
+
+        <header>
+            <div id="home"><button id="btHome">HOME</button></div>
+
+            <div id="titre">
+                <h1>Le Nombre Mystérieux</h1>
+                <h2>[VS I.A] Version 3.6</h2>
+                <img id="imgMute" src="img/v_on.png" alt="volume on/off">
+            </div>
+            <div id="logo"><img src="img/logo.png" alt="logo"></div>
+        </header>
+
+
+        <section>
+
+            <div id="divPseudo">
+
+
+                <label for="pseudo1">Joueur 1 =></label>
+                <input id="pseudo1" type="text" name="pseudo1" placeholder="Ex: Dark Vador" autofocus/><br>
+
+                <label for="inputMax">De 0 à =></label>
+                <input id="inputMax" type="number" name="inputMax" placeholder="Ex: 250" value=100 min=10 required /><br>
+
+                <button id="btPseudo">C'est parti!</button>
+
+            </div>
+
+
+
+            <div id="affichageJeu">
+
+                <div id="tour"></div>
+
+                <div id="affichageTableau">
+                    
+                    <div id="tableau1"> 
+                        <table>
+                            <tr id="lignePlusMoins1"></tr>
+                            <tr id="ligneNombre1"></tr>
+                        </table>
+                    </div>
+
+                    <div id="terminator"><<---<<---<<---TeRmiNaToR--->>--->>--->></div>
+
+                    <div id="tableau2">
+                        <table>
+                            <tr id="lignePlusMoins2"></tr>
+                            <tr id="ligneNombre2"></tr>
+                        </table>
+                    </div>
+                </div>
+
+
+                <div id="affichageGame"> 
+                    <div id="saisies">
+                        <input id="inputSaisie" type="number" placeholder="???" min=0 autocomplete="off" required onfocus="this.blur()"/>
+                    </div>
+                    <div id="plusMoins"><img src="img/logo.png" alt="plus moins"></div>
+                </div>
+
+                <div id="divClavier">
+                    <table id="clavier">
+                        <tr>
+                            <td><button id="bt0">0</button></td>
+                            <td><button id="bt1">1</button></td>
+                            <td><button id="bt2">2</button></td>
+                            <td><button id="bt3">3</button></td>
+                            <td><button id="bt4">4</button></td>
+                            <td><button id="btDel">EFF</button></td>
+                        </tr>
+                        <tr>
+                            <td><button id="bt5">5</button></td>
+                            <td><button id="bt6">6</button></td>
+                            <td><button id="bt7">7</button></td>
+                            <td><button id="bt8">8</button></td>
+                            <td><button id="bt9">9</button></td>
+                            <td><button id="btOk">OK!</button></td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <div id="resultat">
+                    <p></p>
+                    <button id="btRejouer">Rejouer!</button>
+                </div>
+
+            </div>
+
+
+        </section>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Signika&display=swap');
+
+
+body {
+    display: flex;
+    background-color: #5b6060;
+    margin: auto;
+}
+
+
+#page {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+strong {
+    color: green;
+}
+
+:focus {
+
+    outline: none;
+}
+
+p {
+    font-family: 'Signika', sans-serif;
+    font-size: 2.9vw;
+    color: #034b57;
+}
+
+
+/*--------------------------------Boutons---------------------------------------*/
+
+button {
+    font-size: 2.5vw;
+    text-align: center;
+    color: black;
+
+    margin: 1vw 1vw;
+    padding: 2vw 4vw;
+
+    border-radius: 30px 1px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
+    background-color: grey;
+    border: 2px solid #555555;
+
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a81919;
+    color: white;
+}
+
+/*---------------------------------Gestion de l'input Number----------------------------*/
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:invalid {
+    background-color: #f7adad;
+}
+
+/*-----------------------------------Header--------------------------------------------*/
+header {
+    height: 11vh;
+
+    display: flex;
+    justify-content: space-around;
+    background-color: #7cb7b6;
+    border-radius: 10px;
+    border: solid 2px #328784;
+
+}
+
+#home {
+    width: 17%;
+    height: 100%;
+    display: flex;
+}
+
+/*-----------------------------------Bouton Home----------------------------------------*/
+#home button {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    padding: 0;
+
+    font-size: 4vw;
+    text-decoration: underline overline;
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #05626d;
+    background-color: transparent;
+
+    color: #034b57;
+
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#home button:hover {
+    background-color: #a81919;
+    color: white;
+}
+
+/*------------------------------Titre/Logos---------------------------------------------*/
+#titre {
+    width: 66%;
+}
+
+#logo {
+    width: 17%;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: 2px 2px 2px #05626d;
+    font-size: 4.8vw;
+    text-align: left;
+    margin-top: 0;
+
+}
+
+h2 {
+    font-family: 'Special Elite', cursive;
+    font-style: italic;
+    font-size: 3vw;
+    text-align: right;
+}
+
+h1,
+h2 {
+    color: #034b57;
+}
+
+#imgMute {
+    position: absolute;
+    left: 20vw;
+    top: 5vh;
+    height: 4vh;
+}
+
+/*------------------------------Section-----------------------------------------*/
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------------------------Section Pseudo------------------------------------*/
+
+#divPseudo {
+    height: 88vh;
+    background-color: #7cb7b6;
+    border-radius: 10px;
+    border: solid 2px #328784;
+    border-top: none;
+}
+
+label {
+    font-family: 'Signika', sans-serif;
+    font-size: 4.6vw;
+    color: #034b57;
+    display: inline-block;
+    width: 23vw;
+    line-height: 15vh;
+    margin-left: 1vw;
+}
+
+#divPseudo input {
+
+    font-family: 'Signika', sans-serif;
+    font-size: 6vw;
+    background-color: rgba(137, 137, 137, 0.5);
+    border-radius: 15px;
+    border: 1.5vw ridge rgba(50, 135, 132, 0.8);
+    text-align: center;
+    width: 65%;
+    height: 9%;
+}
+
+#divPseudo input:invalid {
+    background-color: #f7adad;
+}
+
+#divPseudo button {
+    width: 40%;
+    height: 9%;
+    font-size: 4vw;
+    border-radius: 20px 5px;
+    display: block;
+    margin: auto;
+    margin-top: 2vh;
+
+
+}
+
+#divPseudo button:hover {
+    width: 90%;
+}
+
+
+/*----------------------------Affichage Gameplay-----------------------------------------*/
+#affichageJeu {
+    display: none;
+    flex-direction: column;
+    height: 88vh;
+
+}
+
+/*-----------------------Affichage infos Joueur------------------------------------------*/
+#tour {
+    height: 3vh;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 9px;
+    border: solid 2px #328784;
+    background-color: grey;
+    border-top: none;
+}
+
+#tour p {
+    font-size: 5vw;
+    text-align: justify;
+    margin: auto;
+}
+
+
+/*-------------------------Affichages des Tableaux des joueurs---------------------------*/
+
+#affichageTableau {
+    height: 33vh;
+
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    border: solid 2px #328784;
+    background-color: #7cb7b6;
+    border-top: none;
+
+    overflow: auto;
+}
+
+
+/*-----------------------------Tableau Joueur 1-------------------------------------------*/
+
+#affichageTableau table {
+    table-layout: fixed;
+    width: 10%;
+}
+
+
+#affichageTableau table td {
+    font-size: 5vw;
+
+}
+
+#terminator
+{
+    width: 100%;
+    height: 1vh;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: 1px 1px 1px #05626d;
+    font-weight: bold;
+    font-size: 3.6vw;
+    color: #c62b2b;
+    margin-bottom: 1vh;
+}
+
+#tableau1 {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+
+
+#lignePlusMoins1 td {
+    text-align: center;
+    border: solid 2px #328784;
+    border-radius: 10px;
+    background-color: rgba(137, 137, 137, 0.5);
+    width: 10vw;
+    height: 10vw;
+}
+
+#lignePlusMoins1 img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#ligneNombre1 td {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    border-radius: 10px;
+    border: solid 2px #328784;
+    background-color: rgba(137, 137, 137, 0.5);
+    overflow: hidden;
+    width: 10vw;
+    height: 10vw;
+}
+
+/*-----------------------------Tableau Joueur 2-------------------------------------------*/
+
+#tableau2 {
+
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#lignePlusMoins2 td {
+    text-align: center;
+    border: solid 2px #328784;
+    border-radius: 10px;
+    background-color: rgba(137, 137, 137, 0.5);
+    width: 10vw;
+    height: 10vw;
+}
+
+#lignePlusMoins2 img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ligneNombre2 td {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    border-radius: 10px;
+    border: solid 2px #328784;
+    background-color: rgba(137, 137, 137, 0.5);
+    overflow: hidden;
+    width: 10vw;
+    height: 10vw;
+}
+
+/*------------------------Affichages des saisis des joueurs-------------------------*/
+
+#affichageGame {
+    border: solid blue;
+    height: 31vh;
+    display: flex;
+    justify-content: stretch;
+    background-color: #7cb7b6;
+    border-radius: 15px;
+    border: solid 2px #328784;
+    border-top: none;
+    border-bottom: none;
+}
+
+
+#saisies {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+#inputSaisie {
+    width: 40vw;
+    height: 40vw;
+
+    font-size: 15vw;
+    border: 3vw ridge rgba(50, 135, 132, 0.8);
+    text-align: center;
+    margin: auto;
+    font-family: 'Special Elite', cursive;
+    border-radius: 50%;
+    background-color: rgba(137, 137, 137, 0.5);
+}
+
+#inputSaisie:invalid {
+    background-color: #b3bcbc;
+}
+
+
+#plusMoins {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+
+#plusMoins img {
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+
+
+/*----------------------Affichage du Clavier-----------------------------------------*/
+#divClavier {
+    height: 21vh;
+    display: flex;
+    background-color: #7cb7b6;
+    border-radius: 15px;
+    border: solid 2px #328784;
+
+}
+
+#clavier {
+    
+    width: 100%;
+    margin: auto;
+    
+}
+
+#clavier td {
+    width:  5vw;
+    height: 10vh;
+}
+
+
+
+#clavier button {
+    border-radius: 40% 0;
+    font-size: 5vw;
+    width: 90%;
+    height: 90%
+}
+
+/*----------------------------Resultat-------------------------------------------------*/
+#resultat {
+    display: none;
+    justify-content: space-around;
+    height: 22vh;
+    background-color: #7cb7b6;
+    border-radius: 15px;
+    border: solid 2px #328784;
+}
+
+#resultat p {
+    font-size: 5.5vw;
+    font-style: italic;
+    width: 75%;
+    padding: 1vw;
+    margin: auto;
+}
+
+#resultat button {
+    width: 25%;
+    height: 90%;
+
+    margin: auto;
+    margin-right: 1vw;
+    background-color: #59a56c;
+    text-align: center;
+    color: #034b57;
+    border-radius: 30px 5px;
+    font-size: 4.5vw;
+}
+
+#resultat button:hover {
+    background-color: #a81919;
+    color: white;
+
+}

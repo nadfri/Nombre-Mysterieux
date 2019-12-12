@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Signika&display=swap');
+
+
+body {
+    display: flex;
+    background-color: #5b6060;
+    margin: auto;
+}
+
+
+#page {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+strong {
+    color: green;
+}
+
+:focus {
+
+    outline: none;
+}
+
+p {
+    font-family: 'Signika', sans-serif;
+    font-size: 2.9vw;
+    color: #034b57;
+}
+
+
+/*--------------------------------Boutons---------------------------------------*/
+
+button {
+    font-size: 2.5vw;
+    text-align: center;
+    color: black;
+
+    margin: 1vw 1vw;
+    padding: 2vw 4vw;
+
+    border-radius: 30px 1px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2);
+    background-color: grey;
+    border: 2px solid #555555;
+
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #a81919;
+    color: white;
+}
+
+/*-----------------------------Gestion de l'input Number-----------------------*
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*--------------------------------Header---------------------------------------*/
+header {
+    height: 11vh;
+
+    display: flex;
+    justify-content: space-around;
+    background-color: #7cb7b6;
+    border-radius: 10px;
+    border: solid 2px #328784;
+
+}
+
+#home {
+    width: 17%;
+    height: 100%;
+    display: flex;
+}
+
+/*-----------------------------------Bouton Home----------------------------------------*/
+#home button {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    padding: 0;
+
+    font-size: 4vw;
+    text-decoration: underline overline;
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #05626d;
+    background-color: transparent;
+
+    color: #034b57;
+
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#home button:hover {
+    background-color: #a81919;
+}
+
+/*--------------------------------------------------------------------------------------*/
+#titre {
+    width: 66%;
+}
+
+#logo {
+    width: 17%;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: 2px 2px 2px #05626d;
+    font-size: 4.8vw;
+    text-align: left;
+    margin-top: 0;
+
+}
+
+h2 {
+    font-family: 'Special Elite', cursive;
+    font-style: italic;
+    font-size: 3vw;
+    text-align: right;
+}
+
+h1,
+h2 {
+    color: #034b57;
+}
+
+#imgMute {
+    position: absolute;
+    left: 20vw;
+    top: 5vh;
+    height: 4vh;
+}
+
+/*------------------------------Section-----------------------------------------*/
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+/*--------------------------------Partie 1---------------------------------------*/
+#partie1 {
+    height: 28vh;
+
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    background-image: linear-gradient(#7cb7b6, #e28956);
+    border-radius: 20px;
+    border: solid 2px #328784;
+}
+
+
+#bienvenue {
+    text-align: center;
+    margin-top: 1vh;
+
+}
+
+#bienvenue p {
+    font-size: 4vw;
+}
+
+#input1 {
+    height: 3vh;
+    font-size: 4vw;
+    border: 1vw ridge rgba(50, 135, 132, 0.8);
+
+    font-family: 'Signika', sans-serif;
+    background-color: rgba(137, 137, 137, 0.5);
+    border-radius: 30px 1px;
+    text-align: center;
+}
+
+#vie_coeur {
+    margin: auto;
+    margin-top: 0;
+}
+
+#ligneCoeur {
+    text-align: center;
+}
+
+#ligneNombre td {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 6vw;
+    border-radius: 10px;
+    border: solid 2px #328784;
+    background-color: rgba(137, 137, 137, 0.5);
+    overflow: hidden;
+    width: 45px;
+    height: 45px;
+}
+
+/*--------------------------------Partie 2---------------------------------------*/
+#partie2 {
+    height: 33vh;
+
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#7cb7b6, #e28956);
+    border-radius: 20px;
+    border: solid 2px #328784;
+}
+
+#affichageNiveau {
+    margin-top: 0;
+    text-align: center;
+}
+
+#affichageNiveau p {
+    font-size: 4vw;
+}
+
+#affichageJeu {
+    display: flex;
+    justify-content: stretch;
+}
+
+
+#input2 {
+    width: 30vw;
+    height: 30vw;
+
+    font-size: 15vw;
+    border: 3vw ridge rgba(50, 135, 132, 0.8);
+    text-align: center;
+    margin: auto;
+    font-family: 'Special Elite', cursive;
+    border-radius: 50%;
+    background-color: rgba(137, 137, 137, 0.5);
+}
+
+#affichageNombre {
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    visibility: hidden;
+    margin: auto;
+}
+
+#bouton2 {
+    font-size: 5vw;
+}
+
+#plusMoins {
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#plusMoins img {
+    width: 100%;
+    height: 100%;
+}
+
+/*--------------------------------Score---------------------------------------*/
+#score {
+    height: 25vh;
+
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(#ecef39, #fff);
+    border-radius: 15px;
+    border: solid 2px #328784;
+}
+
+#score p {
+    font-size: 6vw;
+    color: #f75959;
+    font-style: italic;
+}
+
+#score button {
+    visibility: hidden;
+    padding: 2vw 3.5vw;
+    border-radius: 30px 5px;
+    font-size: 5vw;
+
+}
+
+
+/*--------------------------------Clavier---------------------------------------*/
+
+#divClavier {
+    height: 25vh;
+    display: none;
+    background-image: linear-gradient(#ecef39, #fff);
+    border-radius: 15px;
+    border: solid 2px #328784;
+
+}
+
+#clavier {
+    
+    width: 100%;
+    margin: auto;
+    margin-top:1vh;
+    
+}
+
+#clavier td {
+    width:  5vw;
+    height: 10vh;
+}
+
+
+
+#clavier button {
+    border-radius: 40% 0;
+    font-size: 5vw;
+    width: 90%;
+    height: 90%
+}
+
+/*-------------------Blinking Effect----------------*/
+.blinking {
+    animation: blinkingBackground 2s infinite;
+}
+
+@keyframes blinkingBackground {
+    0% {
+        background-color: #5b6060;
+    }
+
+    50% {
+        background-color: #e28956;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+.normal {
+    background-image: linear-gradient(#7cb7b6, #e28956);
+}
