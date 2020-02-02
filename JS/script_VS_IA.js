@@ -99,7 +99,7 @@ function add_td(tableau,n)
 function jeu()
 {
     document.getElementById("tour").innerHTML=`<p>Tour: <strong>${tour+1}</strong></p>
-    <p><font color="blue">${nomP1}</font></p><p><font color="red">${idInputMax.value}</font></p>`;
+    <p><font color="blue">${nomP1}</font></p><p>Maximum: <font color="red">${idInputMax.value}</font></p>`;
 
     //----------------------------Verification Saisie-------------------------------------------     
     idInputSaisie.max=idInputMax.value;
