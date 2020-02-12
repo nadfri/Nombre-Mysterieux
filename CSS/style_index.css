@@ -8,15 +8,12 @@
 body {
     display: flex;
     background-color: #5b6060;
-    margin: auto;
-}
-
-
-#page {
     width: 100%;
     height: 100%;
-    margin: auto;
+    margin: 0;
 }
+
+
 
 :focus {
     outline: none;
@@ -24,7 +21,7 @@ body {
 
 p {
     font-family: 'Signika', sans-serif;
-    font-size: 5vw;
+    font-size: 4vw;
     color: #034b57;
 }
 
@@ -44,8 +41,6 @@ button:hover {
 }
 
 /*-----------------------------------Header------------------------------------------*/
-
-
 header {
     height: 11vh;
 
@@ -69,7 +64,7 @@ header {
     height: 90%;
     margin: auto;
 
-    font-size: 4vw;
+    font-size: 3.5vw;
     text-decoration: underline overline;
 
     border-radius: 10px;
@@ -98,7 +93,7 @@ header {
 h1 {
     font-family: 'Cinzel Decorative', cursive;
     text-shadow: 2px 2px 2px #05626d;
-    font-size: 4.8vw;
+    font-size: 2.5vh;
     text-align: left;
     margin-top: 0;
 
@@ -107,7 +102,7 @@ h1 {
 h2 {
     font-family: 'Special Elite', cursive;
     font-style: italic;
-    font-size: 3vw;
+    font-size: 2vh;
     text-align: left;
 }
 
@@ -131,34 +126,86 @@ div {
     text-align: center;
 }
 
-#boutonNiv {
-    height: 50vh;
-
-}
 
 section div {
-    height: 10vh;
+    height: 11%;
     width: 100%;
 }
 
 section button {
     width: 50%;
-    height: 90%;
+    height: 8vh;
     margin: auto;
 
     font-family: 'Lobster';
-    font-size: 8vw;
+    font-size: 5vw;
 
     border-radius: 30px 1px;
     background-color: grey;
 }
 
 section button:hover {
-    width: 100%;
+    width: 95%;
 }
 
 .play2 {
     background-color: #59a56c;
 }
+
+/***********************************************************************************/
+
+
+@media all and (min-device-width: 900px) {
+
+
+    body {
+
+        width: 900px;
+        height: 1000px;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    section {
+        height: 900px;
+    }
+
+
+    p {
+
+        font-size: 20px;
+    }
+
+    #home button {
+        font-size: 20px;
+    }
+
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+
+    }
+
+
+    section div {
+        height: 100px;
+        width: 100%;
+    }
+
+    section button {
+        width: 50%;
+        height: 80px;
+        margin: auto;
+        font-size: 30px;
+
+    }
+
+
 
 /***********************************************************************************/
